@@ -1,20 +1,17 @@
-import React, { Component } from 'react';
-import AppBar from './components/AppBar';
+import React from 'react';
+import HeaderBar from './components/Header';
 import './App.css';
 
-class App extends React.Component {
+class Webportfolio extends React.Component {
   render() {
     return (
       <React.Fragment>
         <div className="App">
-          <AppBar />
+          <HeaderBar />
         </div>
       </React.Fragment>
     );
   }
-}
-// test2
+};
 
-//test 3
-
-export default App;
+export default Webportfolio;

@@ -13,23 +13,26 @@ const styles = {
   grow: {
     flexGrow: 1,
   },
-  menuButton: {
+  name: {
     marginLeft: -12,
     marginRight: 20,
   },
 };
 
-function ButtonAppBar(props) {
+
+function Header(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" color="secondary">
         <Toolbar>
-        <Typography variant="title" color="inherit">
+          <Typography className={classes.name} variant="title" color="inherit" >
             Andrew Lee
           </Typography>
-          <Typography variant="title" color="inherit" className={classes.grow}>
-            Portfolio
+          <Typography 
+            variant="title" 
+            color="inherit" 
+            className={classes.grow}>
           </Typography>
           <Button color="inherit">About</Button>
           <Button color="inherit">Projects</Button>
@@ -40,8 +43,12 @@ function ButtonAppBar(props) {
   );
 }
 
-ButtonAppBar.propTypes = {
+Header.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ButtonAppBar);
+export default withStyles(styles)(Header);
+
+// notes
+// for transparent background on the AppBar tag
+// style={{ background: 'transparent', boxShadow: 'none'}}
