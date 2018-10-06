@@ -24,7 +24,7 @@ function Header(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="secondary">
+      <AppBar position="static" color="default">
         <Toolbar>
           <Typography className={classes.name} variant="title" color="inherit" >
             Andrew Lee
