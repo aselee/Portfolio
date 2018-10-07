@@ -34,7 +34,7 @@ function Header(props) {
             color="inherit" 
             className={classes.grow}>
           </Typography>
-          <Button color="inherit">About</Button>
+          <Button color="inherit">Skills</Button>
           <Button color="inherit">Projects</Button>
           <Button color="inherit">Contact</Button>
         </Toolbar>
