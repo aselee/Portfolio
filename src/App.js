@@ -9,6 +9,17 @@ import Footer from './components/Footer';
 import Skills from './components/Skills';
 
 
+//////////////////////////////////////////////////////
+// Using FontAwesome
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+// import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
+
+library.add( fab )
+// library.add(fab, faCheckSquare )
+
+//////////////////////////////////////////////////////
+
 class Webportfolio extends React.Component {
   render() {
     return (
