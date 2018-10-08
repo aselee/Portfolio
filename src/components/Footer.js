@@ -1,6 +1,8 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Paper from '@material-ui/core/Paper';
 
 const styles = theme => ({
   footer: {
@@ -15,14 +17,18 @@ function Footer(props){
   const { classes } = props;
 
   return(
-    <footer className={classes.footer}>
-      <Typography variant="title" align="center" gutterBottom>
-        Footer
-      </Typography>
-      <Typography variant="subheading" align="center" color="textSecondary" component="p">
-        Add social media links and github page
-      </Typography>
-  </footer>
+    <Paper>
+      <footer className={classes.footer}>
+        <Typography variant="title" align="center" gutterBottom>
+          Social Media
+        </Typography>
+        <div>
+          <FontAwesomeIcon icon={['fab', 'linkedin']} size="4x" fixedWidth color="lightblue"/>
+          <FontAwesomeIcon icon={['fab', 'instagram']} size="4x" fixedWidth color="purple" />
+          <FontAwesomeIcon icon={['fab', 'github']} size="4x" fixedWidth />
+        </div>
+    </footer>
+  </Paper>
   )
 };
 
