@@ -5,6 +5,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+// import red from '@material-ui/core/colors/red';
 
 const styles = {
   root: {
@@ -17,14 +18,19 @@ const styles = {
     marginLeft: -12,
     marginRight: 20,
   },
+  // background: {
+  //   backgroundColor: red[500],
+  // },
 };
 
 
 function Header(props) {
+
   const { classes } = props;
+
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="default">
+      <AppBar position="static" color="default" className={classes.background}>
         <Toolbar>
           <Typography className={classes.name} variant="title" color="inherit" >
             Andrew Lee
