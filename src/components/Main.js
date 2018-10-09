@@ -3,13 +3,13 @@ import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
-import red from '@material-ui/core/colors/red';
+import { red }from '@material-ui/core/colors';
 
 
 const styles = theme => ({
   mainFeaturedPost: {
     // backgroundColor: theme.palette.grey[800],
-    backgroundColor: red[500],
+    backgroundColor: red[200],
     color: theme.palette.common.white,
     marginBottom: theme.spacing.unit * 4,
   },
