@@ -7,7 +7,7 @@ import Main from './components/Main';
 import Album from './components/Album';
 import Footer from './components/Footer';
 import Skills from './components/Skills';
-// import Contact from './components/Contact';
+import Contact from './components/Contact';
 
 
 //////////////////////////////////////////////////////
@@ -33,7 +33,7 @@ export class Webportfolio extends React.Component {
               <Main />
               <Skills />
               <Album />
-              {/* <Contact /> */}
+              <Contact />
               <Footer />
             </div>
         </React.Fragment>
