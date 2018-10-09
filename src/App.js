@@ -7,20 +7,22 @@ import Main from './components/Main';
 import Album from './components/Album';
 import Footer from './components/Footer';
 import Skills from './components/Skills';
+// import Contact from './components/Contact';
 
 
 //////////////////////////////////////////////////////
 // Using FontAwesome
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons'
 // import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 
-library.add( fab )
+library.add( fab, fas)
 // library.add(fab, faCheckSquare )
 
 //////////////////////////////////////////////////////
 
-class Webportfolio extends React.Component {
+export class Webportfolio extends React.Component {
   render() {
     return (
       <MuiThemeProvider>
@@ -31,6 +33,7 @@ class Webportfolio extends React.Component {
               <Main />
               <Skills />
               <Album />
+              {/* <Contact /> */}
               <Footer />
             </div>
         </React.Fragment>
