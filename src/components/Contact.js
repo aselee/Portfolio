@@ -15,6 +15,8 @@ const styles = theme => ({
   },
   margin: {
     margin: theme.spacing.unit,
+    marginLeft: theme.spacing.unit,
+    marginRight: theme.spacing.unit,
   },
   textField: {
     flexBasis: 200,
@@ -26,14 +28,20 @@ const styles = theme => ({
   pos: {
     marginBottom: 12,
   },
+  messageField: {
+    marginLeft: theme.spacing.unit,
+    marginRight: theme.spacing.unit,
+    width: 450,
+  },
 });
 
 
 class Contact extends React.Component {
   state = {
-    name: '',
-    value: '',
-    message: '',
+    first: '',
+    last: '',
+    email: '',
+    multiline: 'Controlled',
   };
 
   handleChange = prop => event => {
@@ -54,17 +62,40 @@ class Contact extends React.Component {
               className={classNames(classes.margin, classes.textField)}
               variant="outlined"
               label="First Name"
-              value={this.state.name}
-              onChange={this.handleChange('name')}
+              value={this.state.first}
+              onChange={this.handleChange('first')}
             />
             <TextField
               id="outlined-adornment-name"
               className={classNames(classes.margin, classes.textField)}
               variant="outlined"
               label="Last Name"
-              value={this.state.name}
-              onChange={this.handleChange('name')}
+              value={this.state.last}
+              onChange={this.handleChange('last')}
+            />        
+            <TextField
+              id="outlined-email-input"
+              label="Email"
+              className={classNames(classes.margin, classes.textField)}
+              type="email"
+              name="email"
+              autoComplete="email"
+              margin="normal"
+              variant="outlined"
+              onChange={this.handleChange('email')}
             />
+          <div>
+            <TextField
+              id="outlined-multiline-static"
+              label="Message"
+              multiline
+              rows="4"
+              name="message"
+              className={classes.messageField}
+              margin="normal"
+              variant="outlined"
+            />
+          </div>
         </CardContent>
       </Card>
     );
