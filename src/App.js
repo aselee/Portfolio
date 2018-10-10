@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
 import { MuiThemeProvider } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
+// import CssBaseline from '@material-ui/core/CssBaseline';
 import HeaderBar from './components/Header';
 import Main from './components/Main';
 import Album from './components/Album';
 import Footer from './components/Footer';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+
 
 
 //////////////////////////////////////////////////////
@@ -27,15 +28,14 @@ export class Webportfolio extends React.Component {
     return (
       <MuiThemeProvider>
         <React.Fragment>
-          <CssBaseline/>
-            <div className="App">
-              <HeaderBar />
-              <Main />
-              <Skills />
-              <Album />
-              <Contact />
-              <Footer />
-            </div>
+          <div className="App">
+            <HeaderBar />
+            <Main />
+            <Skills />
+            <Album />
+            <Contact />
+            <Footer />
+          </div>
         </React.Fragment>
       </MuiThemeProvider>
     );
