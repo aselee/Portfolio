@@ -4,10 +4,12 @@ import { MuiThemeProvider } from '@material-ui/core/styles';
 // import CssBaseline from '@material-ui/core/CssBaseline';
 import HeaderBar from './components/Header';
 import Main from './components/Main';
-import Album from './components/Album';
+import Projects from './components/Projects';
 import Footer from './components/Footer';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import Image from './components/Image';
+
 
 
 
@@ -30,9 +32,10 @@ export class Webportfolio extends React.Component {
         <React.Fragment>
           <div className="App">
             <HeaderBar />
+            <Image />
             <Main />
             <Skills />
-            <Album />
+            <Projects />
             <Contact />
             <Footer />
           </div>

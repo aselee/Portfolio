@@ -62,7 +62,7 @@ const styles = theme => ({
 
 const cards = [1, 2, 3];
 
-function Album(props) {
+function Projects(props) {
   const { classes } = props;
 
   return (
@@ -117,9 +117,9 @@ function Album(props) {
   );
 }
 
-Album.propTypes = {
+Projects.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
 
-export default withStyles(styles)(Album);
+export default withStyles(styles)(Projects);

@@ -6,8 +6,6 @@ import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import { blue }from '@material-ui/core/colors';
 import { red }from '@material-ui/core/colors';
-import Avatar from '@material-ui/core/Avatar';
-import classNames from 'classnames';
 
 
 const styles = theme => ({

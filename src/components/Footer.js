@@ -13,7 +13,6 @@ const styles = theme => ({
   },
 });
 
-
 function Footer(props){
   const { classes } = props;
 
