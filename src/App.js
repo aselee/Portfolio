@@ -8,7 +8,7 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
-import Image from './components/Image';
+
 
 
 
@@ -32,7 +32,6 @@ export class Webportfolio extends React.Component {
         <React.Fragment>
           <div className="App">
             <HeaderBar />
-            <Image />
             <Main />
             <Skills />
             <Projects />
