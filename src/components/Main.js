@@ -11,9 +11,8 @@ import { red }from '@material-ui/core/colors';
 const styles = theme => ({
   mainPaper: {
     backgroundColor: theme.palette.grey[800],
-    backgroundColor: blue[200],
+    // backgroundColor: blue[200],
     color: theme.palette.common.white,
-    textAlign: 'center',
     padding: theme.spacing.unit * 4,
     // marginBottom: theme.spacing.unit * 4,
     // paddingTop: theme.spacing.unit * 4,
@@ -23,10 +22,14 @@ const styles = theme => ({
   
   },
   mainText: {
-    // padding: theme.spacing.unit * 4,
-    padding: `${theme.spacing.unit * 4}px`,
-    paddingRight: theme.spacing.unit * 4,
-    backgroundColor: red[200],
+    textAlign: "center",
+    padding: `${theme.spacing.unit * 6}px`,
+    [theme.breakpoints.up('md')]: {
+      paddingRight: 0,
+    },
+    // padding: `${theme.spacing.unit * 4}px`,
+    // paddingRight: theme.spacing.unit * 4,
+    // backgroundColor: red[200],
   },
 })
 
