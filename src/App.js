@@ -11,8 +11,6 @@ import Contact from './components/Contact';
 
 
 
-
-
 //////////////////////////////////////////////////////
 // Using FontAwesome
 import { library } from '@fortawesome/fontawesome-svg-core';
